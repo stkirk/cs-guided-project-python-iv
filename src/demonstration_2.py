@@ -17,5 +17,11 @@ with them. Thus they are always non-negative (zero or positive). We use uint's
 when we know the value we are counting will always be non-negative."
 """
 def hamming_weight(n):
-    # Your code here
+    # Convert the input number to a binary string representation
+    bin_string = bin(n)
+    # Count how many 1s are in the string and return the count
+    return bin_string.count('1')
 
+print(hamming_weight(0b00000000000000000000001000000011)) #--> 3
+print(hamming_weight(0b00000000000000000000000000001000)) #--> 1
+print(hamming_weight(0b11111111111111111111111111111011)) #--> 31
