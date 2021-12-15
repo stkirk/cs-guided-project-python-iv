@@ -65,3 +65,4 @@ def to_lower_case_josh(string):
 print(to_lower_case_josh("Lambda   -   School!!!"))
 print(to_lower_case_josh("austen"))
 print(to_lower_case_josh("LLAMA"))
+print("binary 96", bin(96))
